@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Лабораторная работа №4</title>
+  </head>
+  <body class="page lab-page">
+    <aside class="aside"><h3>Меню навигации</h3><nav class="navbar" aria-label="Лабораторные работы">
+<a href="./index.html" class="linkLab">Назад</a>
+<a href="./L1.html" class="linkLab">ЛР №1 Линейные алгоритмы</a>
+<a href="./L2.html" class="linkLab">ЛР №2 Алгоритмы ветвления</a>
+<a href="./L3.html" class="linkLab">ЛР №3 Циклические алгоритмы</a>
+<a href="./L4.html" class="linkLab" aria-current="page">ЛР №4 Рекурсивные алгоритмы</a>
+<a href="./L5.html" class="linkLab">ЛР №5 Одномерные массивы</a>
+<a href="./L6.html" class="linkLab">ЛР №6 Двумерные массивы</a>
+<a href="./L7.html" class="linkLab">ЛР №7 Сортировка пузырьком</a>
+<a href="./L8.html" class="linkLab">ЛР №8 Сортировка вставками</a>
+<a href="./L9.html" class="linkLab">ЛР №9 Сортировка выбором</a>
+<a href="./L10.html" class="linkLab">ЛР №10 Бинарный поиск</a>
+<a href="./L11.html" class="linkLab">ЛР №11 Обход дерева</a>
+<a href="./L12.html" class="linkLab">ЛР №12 Очередь</a></nav></aside>
+    <main class="main">
+      <h1>Лабораторная работа №4</h1>
+      <div class="lab-tasks">
+        <form class="lab-task" data-task="1" aria-labelledby="task-1">
+          <h2 id="task-1">1. Факториал</h2>
+          <p>Рекурсивно вычислите n! для целого n от 0 до 100.</p>
+          <div class="lab-inputs">
+            <label
+              >n <input type="number" min="0" max="100" step="1" required
+            /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="2" aria-labelledby="task-2">
+          <h2 id="task-2">2. Число Фибоначчи</h2>
+          <p>
+            Рекурсивно найдите F(n) для целого n от 0 до 70. Нумерация
+            начинается с F(0) = 0 и F(1) = 1.
+          </p>
+          <div class="lab-inputs">
+            <label
+              >n <input type="number" min="0" max="70" step="1" required
+            /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="3" aria-labelledby="task-3">
+          <h2 id="task-3">3. Возведение в степень</h2>
+          <p>Рекурсивно возведите число x в целую степень n.</p>
+          <div class="lab-inputs">
+            <label>x <input type="number" step="any" required /></label>
+            <label>n <input type="number" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="4" aria-labelledby="task-4">
+          <h2 id="task-4">4. Палиндром</h2>
+          <p>
+            Рекурсивно проверьте, одинаково ли читается строка в обе стороны.
+            При сравнении учитываются только буквы и цифры, регистр не важен.
+          </p>
+          <div class="lab-inputs">
+            <label>Строка <input type="text" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="5" aria-labelledby="task-5">
+          <h2 id="task-5">5. Бинарный поиск</h2>
+          <p>
+            Рекурсивно найдите элемент в массиве, отсортированном по неубыванию.
+            Разделяйте числа пробелами или запятыми, а дробную часть — точкой.
+            Индексы начинаются с нуля.
+          </p>
+          <div class="lab-inputs">
+            <label>Массив <input type="text" required /></label>
+            <label>Элемент <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="6" aria-labelledby="task-6">
+          <h2 id="task-6">6. Обратный порядок слов</h2>
+          <p>Рекурсивно выведите слова строки в обратном порядке.</p>
+          <div class="lab-inputs">
+            <label>Строка <input type="text" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="7" aria-labelledby="task-7">
+          <h2 id="task-7">7. Сумма простых чисел</h2>
+          <p>
+            Рекурсивно найдите одно разложение числа на сумму простых чисел.
+            Слагаемые могут повторяться.
+          </p>
+          <div class="lab-inputs">
+            <label
+              >Число <input type="number" min="2" max="10000" step="1" required
+            /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="8" aria-labelledby="task-8">
+          <h2 id="task-8">8. Количество цифр</h2>
+          <p>
+            Рекурсивно подсчитайте количество цифр целого числа. Знак минус не
+            считается цифрой.
+          </p>
+          <div class="lab-inputs">
+            <label>Число <input type="number" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="9" aria-labelledby="task-9">
+          <h2 id="task-9">9. Ханойская башня</h2>
+          <p>
+            Рекурсивно найдите шаги переноса дисков со стержня A на стержень C,
+            используя стержень B. Введите от 1 до 12 дисков.
+          </p>
+          <div class="lab-inputs">
+            <label
+              >Дисков <input type="number" min="1" max="12" step="1" required
+            /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output class="lab-steps" tabindex="0"></output>
+        </form>
+      </div>
+    </main>
+    <script src="./L4.js"></script>
+  </body>
+</html>

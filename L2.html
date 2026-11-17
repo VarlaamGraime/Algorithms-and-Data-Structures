@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Лабораторная работа №2</title>
+  </head>
+  <body class="page lab-page">
+    <aside class="aside"><h3>Меню навигации</h3><nav class="navbar" aria-label="Лабораторные работы">
+<a href="./index.html" class="linkLab">Назад</a>
+<a href="./L1.html" class="linkLab">ЛР №1 Линейные алгоритмы</a>
+<a href="./L2.html" class="linkLab" aria-current="page">ЛР №2 Алгоритмы ветвления</a>
+<a href="./L3.html" class="linkLab">ЛР №3 Циклические алгоритмы</a>
+<a href="./L4.html" class="linkLab">ЛР №4 Рекурсивные алгоритмы</a>
+<a href="./L5.html" class="linkLab">ЛР №5 Одномерные массивы</a>
+<a href="./L6.html" class="linkLab">ЛР №6 Двумерные массивы</a>
+<a href="./L7.html" class="linkLab">ЛР №7 Сортировка пузырьком</a>
+<a href="./L8.html" class="linkLab">ЛР №8 Сортировка вставками</a>
+<a href="./L9.html" class="linkLab">ЛР №9 Сортировка выбором</a>
+<a href="./L10.html" class="linkLab">ЛР №10 Бинарный поиск</a>
+<a href="./L11.html" class="linkLab">ЛР №11 Обход дерева</a>
+<a href="./L12.html" class="linkLab">ЛР №12 Очередь</a></nav></aside>
+    <main class="main">
+      <h1>Лабораторная работа №2</h1>
+      <div class="lab-tasks">
+        <form class="lab-task" data-task="1" aria-labelledby="task-1">
+          <h2 id="task-1">1. Новые значения A и B</h2>
+          <p>
+            Если целые числа A и B различаются, присвойте обоим большее
+            значение. Если равны, присвойте обоим ноль.
+          </p>
+          <div class="lab-inputs">
+            <label>A <input type="number" step="1" required /></label>
+            <label>B <input type="number" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="2" aria-labelledby="task-2">
+          <h2 id="task-2">2. Сумма двух наибольших чисел</h2>
+          <p>Из трёх чисел выберите два наибольших и найдите их сумму.</p>
+          <div class="lab-inputs">
+            <label>A <input type="number" step="any" required /></label>
+            <label>B <input type="number" step="any" required /></label>
+            <label>C <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="3" aria-labelledby="task-3">
+          <h2 id="task-3">3. Ближайшая точка</h2>
+          <p>
+            Определите, какая из точек B и C ближе к A, и выведите расстояние от
+            A.
+          </p>
+          <div class="lab-inputs">
+            <label
+              >x<sub>A</sub> <input type="number" step="any" required
+            /></label>
+            <label
+              >y<sub>A</sub> <input type="number" step="any" required
+            /></label>
+            <label
+              >x<sub>B</sub> <input type="number" step="any" required
+            /></label>
+            <label
+              >y<sub>B</sub> <input type="number" step="any" required
+            /></label>
+            <label
+              >x<sub>C</sub> <input type="number" step="any" required
+            /></label>
+            <label
+              >y<sub>C</sub> <input type="number" step="any" required
+            /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="4" aria-labelledby="task-4">
+          <h2 id="task-4">4. Координатная четверть</h2>
+          <p>
+            Найдите номер четверти для точки, которая лежит вне координатных
+            осей.
+          </p>
+          <div class="lab-inputs">
+            <label>x <input type="number" step="any" required /></label>
+            <label>y <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="5" aria-labelledby="task-5">
+          <h2 id="task-5">5. Знак и чётность числа</h2>
+          <p>
+            Опишите целое число по знаку и чётности. Для нуля выведите «нулевое
+            число».
+          </p>
+          <div class="lab-inputs">
+            <label>Число <input type="number" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="6" aria-labelledby="task-6">
+          <h2 id="task-6">6. Чётность и разрядность числа</h2>
+          <p>Опишите целое число от 1 до 999 по чётности и количеству цифр.</p>
+          <div class="lab-inputs">
+            <label
+              >Число <input type="number" min="1" max="999" step="1" required
+            /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="7" aria-labelledby="task-7">
+          <h2 id="task-7">7. Дата прописью</h2>
+          <p>
+            Введите день и номер месяца от 1 до 12. Например, 5 и 1 дают «пятое
+            января».
+          </p>
+          <div class="lab-inputs">
+            <label
+              >День <input type="number" min="1" max="31" step="1" required
+            /></label>
+            <label
+              >Месяц <input type="number" min="1" max="12" step="1" required
+            /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="8" aria-labelledby="task-8">
+          <h2 id="task-8">8. Количество учебных заданий</h2>
+          <p>
+            Запишите число от 10 до 40 прописью и согласуйте с ним слова
+            «учебное задание».
+          </p>
+          <div class="lab-inputs">
+            <label
+              >Количество
+              <input type="number" min="10" max="40" step="1" required
+            /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="9" aria-labelledby="task-9">
+          <h2 id="task-9">9. Трёхзначное число прописью</h2>
+          <p>
+            Запишите число от 100 до 999 словами. Например, 256 — «двести
+            пятьдесят шесть».
+          </p>
+          <div class="lab-inputs">
+            <label
+              >Число <input type="number" min="100" max="999" step="1" required
+            /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="10" aria-labelledby="task-10">
+          <h2 id="task-10">10. Название года</h2>
+          <p>
+            Определите название года в 60-летнем цикле. Цикл начинается в 1984
+            году, а цвета 12-летних подциклов идут в порядке: зелёный, красный,
+            жёлтый, белый, чёрный.
+          </p>
+          <div class="lab-inputs">
+            <label>Год <input type="number" min="1" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+      </div>
+    </main>
+    <script src="./L2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Лабораторная работа №11</title>
+</head>
+<body class="page lab-page">
+<aside class="aside"><h3>Меню навигации</h3><nav class="navbar" aria-label="Лабораторные работы">
+<a href="./index.html" class="linkLab">Назад</a>
+<a href="./L1.html" class="linkLab">ЛР №1 Линейные алгоритмы</a>
+<a href="./L2.html" class="linkLab">ЛР №2 Алгоритмы ветвления</a>
+<a href="./L3.html" class="linkLab">ЛР №3 Циклические алгоритмы</a>
+<a href="./L4.html" class="linkLab">ЛР №4 Рекурсивные алгоритмы</a>
+<a href="./L5.html" class="linkLab">ЛР №5 Одномерные массивы</a>
+<a href="./L6.html" class="linkLab">ЛР №6 Двумерные массивы</a>
+<a href="./L7.html" class="linkLab">ЛР №7 Сортировка пузырьком</a>
+<a href="./L8.html" class="linkLab">ЛР №8 Сортировка вставками</a>
+<a href="./L9.html" class="linkLab">ЛР №9 Сортировка выбором</a>
+<a href="./L10.html" class="linkLab">ЛР №10 Бинарный поиск</a>
+<a href="./L11.html" class="linkLab" aria-current="page">ЛР №11 Обход дерева</a>
+<a href="./L12.html" class="linkLab">ЛР №12 Очередь</a></nav></aside>
+<main class="main">
+<h1>Лабораторная работа №11</h1>
+<h2>Обход бинарного дерева</h2>
+<p>Введите дерево по уровням через пробел. Для отсутствующего узла используйте null.
+Левый ребёнок элемента с индексом i находится по индексу 2i + 1, правый — 2i + 2.
+Например, 1 2 3 null 4 задаёт корень 1, детей 2 и 3 и правого ребёнка 4 у узла 2.</p>
+<p>Прямой обход посещает корень, левое и правое поддеревья. Симметричный — левое поддерево, корень и правое. Обратный — левое, правое поддеревья и корень.</p>
+<form id="tree-form" class="lab-task"><label>Дерево <input required value="1 2 3 4 5 6 7" /></label><button>Обойти</button></form>
+<pre id="tree-view" aria-label="Структура дерева"></pre><output id="result"></output>
+</main>
+<script src="./L11.js"></script>
+</body>
+</html>

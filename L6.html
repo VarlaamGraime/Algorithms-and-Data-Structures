@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Лабораторная работа №6</title>
+</head>
+<body class="page lab-page">
+<aside class="aside"><h3>Меню навигации</h3><nav class="navbar" aria-label="Лабораторные работы">
+<a href="./index.html" class="linkLab">Назад</a>
+<a href="./L1.html" class="linkLab">ЛР №1 Линейные алгоритмы</a>
+<a href="./L2.html" class="linkLab">ЛР №2 Алгоритмы ветвления</a>
+<a href="./L3.html" class="linkLab">ЛР №3 Циклические алгоритмы</a>
+<a href="./L4.html" class="linkLab">ЛР №4 Рекурсивные алгоритмы</a>
+<a href="./L5.html" class="linkLab">ЛР №5 Одномерные массивы</a>
+<a href="./L6.html" class="linkLab" aria-current="page">ЛР №6 Двумерные массивы</a>
+<a href="./L7.html" class="linkLab">ЛР №7 Сортировка пузырьком</a>
+<a href="./L8.html" class="linkLab">ЛР №8 Сортировка вставками</a>
+<a href="./L9.html" class="linkLab">ЛР №9 Сортировка выбором</a>
+<a href="./L10.html" class="linkLab">ЛР №10 Бинарный поиск</a>
+<a href="./L11.html" class="linkLab">ЛР №11 Обход дерева</a>
+<a href="./L12.html" class="linkLab">ЛР №12 Очередь</a></nav></aside>
+<main class="main">
+<h1>Лабораторная работа №6</h1>
+<p>Числа разделяйте пробелами, дробную часть — точкой. Номера элементов начинаются с 1.</p><p>Каждую строку матрицы вводите с новой строки. Столбцы нумеруются с 1. В задаче 10 диагонали перечисляются от верхней правой к нижней левой.</p><div class="lab-tasks">
+<form class="lab-task" data-task="1" aria-labelledby="task-1">
+<h2 id="task-1">Задание 1</h2>
+<p>Дана квадратная матрица A порядка M (M — нечетное число). Начиная с элемента A1,1 и перемещаясь против часовой стрелки, вывести все ее элементы по спирали: первый столбец, последняя строка, последний столбец в обратном порядке, первая строка в обратном порядке, оставшиеся элементы второго столбца и т. д.; последним выводится центральный элемент матрицы.</p>
+<div class="lab-inputs"><label>Матрица<textarea rows="4" required placeholder="1 2 3&#10;4 5 6"></textarea></label></div>
+<button type="submit">Рассчитать</button>
+<output></output>
+</form>
+<form class="lab-task" data-task="2" aria-labelledby="task-2">
+<h2 id="task-2">Задание 2</h2>
+<p>Дана матрица размера M × N и целое число K (1 ≤ K ≤ M). Найти сумму и произведение элементов K-й строки данной матрицы.</p>
+<div class="lab-inputs"><label>Матрица<textarea rows="4" required placeholder="1 2 3&#10;4 5 6"></textarea></label><label>K <input type="number" min="1" step="1" required /></label></div>
+<button type="submit">Рассчитать</button>
+<output></output>
+</form>
+<form class="lab-task" data-task="3" aria-labelledby="task-3">
+<h2 id="task-3">Задание 3</h2>
+<p>Дана матрица размера M × N. Найти номер ее столбца с наименьшим произведением элементов и вывести данный номер, а также значение наименьшего произведения.</p>
+<div class="lab-inputs"><label>Матрица<textarea rows="4" required placeholder="1 2 3&#10;4 5 6"></textarea></label></div>
+<button type="submit">Рассчитать</button>
+<output></output>
+</form>
+<form class="lab-task" data-task="4" aria-labelledby="task-4">
+<h2 id="task-4">Задание 4</h2>
+<p>Дана матрица размера M × N. В каждом ее столбце найти количество элементов, больших среднего арифметического всех элементов этого столбца</p>
+<div class="lab-inputs"><label>Матрица<textarea rows="4" required placeholder="1 2 3&#10;4 5 6"></textarea></label></div>
+<button type="submit">Рассчитать</button>
+<output></output>
+</form>
+<form class="lab-task" data-task="5" aria-labelledby="task-5">
+<h2 id="task-5">Задание 5</h2>
+<p>Дана целочисленная матрица размера M × N. Найти номер первого из ее столбцов, содержащих только нечетные числа. Если таких столбцов нет, то вывести 0.</p>
+<div class="lab-inputs"><label>Матрица<textarea rows="4" required placeholder="1 2 3&#10;4 5 6"></textarea></label></div>
+<button type="submit">Рассчитать</button>
+<output></output>
+</form>
+<form class="lab-task" data-task="6" aria-labelledby="task-6">
+<h2 id="task-6">Задание 6</h2>
+<p>Дана матрица размера M × N. Преобразовать матрицу, поменяв местами минимальный и максимальный элемент в каждой строке.</p>
+<div class="lab-inputs"><label>Матрица<textarea rows="4" required placeholder="1 2 3&#10;4 5 6"></textarea></label></div>
+<button type="submit">Рассчитать</button>
+<output></output>
+</form>
+<form class="lab-task" data-task="7" aria-labelledby="task-7">
+<h2 id="task-7">Задание 7</h2>
+<p>Дана матрица размера M × N. Поменять местами столбцы, содержащие минимальный и максимальный элементы матрицы.</p>
+<div class="lab-inputs"><label>Матрица<textarea rows="4" required placeholder="1 2 3&#10;4 5 6"></textarea></label></div>
+<button type="submit">Рассчитать</button>
+<output></output>
+</form>
+<form class="lab-task" data-task="8" aria-labelledby="task-8">
+<h2 id="task-8">Задание 8</h2>
+<p>Дана матрица размера M × N (M и N — четные числа). Поменять местами левую верхнюю и правую нижнюю четверти матрицы</p>
+<div class="lab-inputs"><label>Матрица<textarea rows="4" required placeholder="1 2 3&#10;4 5 6"></textarea></label></div>
+<button type="submit">Рассчитать</button>
+<output></output>
+</form>
+<form class="lab-task" data-task="9" aria-labelledby="task-9">
+<h2 id="task-9">Задание 9</h2>
+<p>Дана матрица размера M × N. Упорядочить ее строки так, чтобы их первые элементы образовывали возрастающую последовательность.</p>
+<div class="lab-inputs"><label>Матрица<textarea rows="4" required placeholder="1 2 3&#10;4 5 6"></textarea></label></div>
+<button type="submit">Рассчитать</button>
+<output></output>
+</form>
+<form class="lab-task" data-task="10" aria-labelledby="task-10">
+<h2 id="task-10">Задание 10</h2>
+<p>Дана квадратная матрица A порядка M. Найти сумму элементов каждой ее диагонали, параллельной главной (начиная с одноэлементной диагонали).</p>
+<div class="lab-inputs"><label>Матрица<textarea rows="4" required placeholder="1 2 3&#10;4 5 6"></textarea></label></div>
+<button type="submit">Рассчитать</button>
+<output></output>
+</form></div>
+</main>
+<script src="./L6.js"></script>
+</body>
+</html>

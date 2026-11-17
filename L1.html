@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Лабораторная работа №1</title>
+  </head>
+  <body class="page lab-page">
+    <aside class="aside"><h3>Меню навигации</h3><nav class="navbar" aria-label="Лабораторные работы">
+<a href="./index.html" class="linkLab">Назад</a>
+<a href="./L1.html" class="linkLab" aria-current="page">ЛР №1 Линейные алгоритмы</a>
+<a href="./L2.html" class="linkLab">ЛР №2 Алгоритмы ветвления</a>
+<a href="./L3.html" class="linkLab">ЛР №3 Циклические алгоритмы</a>
+<a href="./L4.html" class="linkLab">ЛР №4 Рекурсивные алгоритмы</a>
+<a href="./L5.html" class="linkLab">ЛР №5 Одномерные массивы</a>
+<a href="./L6.html" class="linkLab">ЛР №6 Двумерные массивы</a>
+<a href="./L7.html" class="linkLab">ЛР №7 Сортировка пузырьком</a>
+<a href="./L8.html" class="linkLab">ЛР №8 Сортировка вставками</a>
+<a href="./L9.html" class="linkLab">ЛР №9 Сортировка выбором</a>
+<a href="./L10.html" class="linkLab">ЛР №10 Бинарный поиск</a>
+<a href="./L11.html" class="linkLab">ЛР №11 Обход дерева</a>
+<a href="./L12.html" class="linkLab">ЛР №12 Очередь</a></nav></aside>
+    <main class="main">
+      <h1>Лабораторная работа №1</h1>
+      <div class="lab-tasks">
+        <form class="lab-task" data-task="1" aria-labelledby="task-1">
+          <h2 id="task-1">1. Стороны прямоугольника</h2>
+          <p>
+            По сторонам a и b найдите площадь S = a · b и периметр P = 2 · (a +
+            b).
+          </p>
+          <div class="lab-inputs">
+            <label>a <input type="number" step="any" required /></label>
+            <label>b <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="2" aria-labelledby="task-2">
+          <h2 id="task-2">2. Длина окружности</h2>
+          <p>
+            По диаметру d найдите длину окружности L = π · d. Используйте π =
+            3,14.
+          </p>
+          <div class="lab-inputs">
+            <label>d <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="3" aria-labelledby="task-3">
+          <h2 id="task-3">3. Среднее арифметическое</h2>
+          <p>Для чисел a и b вычислите (a + b) / 2.</p>
+          <div class="lab-inputs">
+            <label>a <input type="number" step="any" required /></label>
+            <label>b <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="4" aria-labelledby="task-4">
+          <h2 id="task-4">4. Операции с квадратами</h2>
+          <p>
+            Найдите сумму, разность, произведение и частное квадратов двух
+            ненулевых чисел.
+          </p>
+          <div class="lab-inputs">
+            <label>a <input type="number" step="any" required /></label>
+            <label>b <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="5" aria-labelledby="task-5">
+          <h2 id="task-5">5. Операции с модулями</h2>
+          <p>
+            Найдите сумму, разность, произведение и частное модулей двух
+            ненулевых чисел.
+          </p>
+          <div class="lab-inputs">
+            <label>a <input type="number" step="any" required /></label>
+            <label>b <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="6" aria-labelledby="task-6">
+          <h2 id="task-6">6. Расстояние между точками</h2>
+          <p>Найдите расстояние между точками (x₁, y₁) и (x₂, y₂).</p>
+          <div class="lab-inputs">
+            <label>x₁ <input type="number" step="any" required /></label>
+            <label>y₁ <input type="number" step="any" required /></label>
+            <label>x₂ <input type="number" step="any" required /></label>
+            <label>y₂ <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="7" aria-labelledby="task-7">
+          <h2 id="task-7">7. Сумма длин отрезков</h2>
+          <p>
+            По координатам A, B и C на числовой оси найдите длины AC и BC и их
+            сумму.
+          </p>
+          <div class="lab-inputs">
+            <label>A <input type="number" step="any" required /></label>
+            <label>B <input type="number" step="any" required /></label>
+            <label>C <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="8" aria-labelledby="task-8">
+          <h2 id="task-8">8. Произведение длин отрезков</h2>
+          <p>Найдите произведение длин AC и BC. Точка C лежит между A и B.</p>
+          <div class="lab-inputs">
+            <label>A <input type="number" step="any" required /></label>
+            <label>B <input type="number" step="any" required /></label>
+            <label>C <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="9" aria-labelledby="task-9">
+          <h2 id="task-9">9. Вершины прямоугольника</h2>
+          <p>
+            По двум противоположным вершинам найдите площадь и периметр. Стороны
+            параллельны осям координат.
+          </p>
+          <div class="lab-inputs">
+            <label>x₁ <input type="number" step="any" required /></label>
+            <label>y₁ <input type="number" step="any" required /></label>
+            <label>x₂ <input type="number" step="any" required /></label>
+            <label>y₂ <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="10" aria-labelledby="task-10">
+          <h2 id="task-10">10. Вершины треугольника</h2>
+          <p>
+            По координатам трёх вершин найдите периметр и площадь треугольника.
+          </p>
+          <div class="lab-inputs">
+            <label>x₁ <input type="number" step="any" required /></label>
+            <label>y₁ <input type="number" step="any" required /></label>
+            <label>x₂ <input type="number" step="any" required /></label>
+            <label>y₂ <input type="number" step="any" required /></label>
+            <label>x₃ <input type="number" step="any" required /></label>
+            <label>y₃ <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="11" aria-labelledby="task-11">
+          <h2 id="task-11">11. Значение функции</h2>
+          <p>Вычислите y = 3x⁶ − 6x² − 7 при заданном x.</p>
+          <div class="lab-inputs">
+            <label>x <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="12" aria-labelledby="task-12">
+          <h2 id="task-12">12. Значение функции</h2>
+          <p>Вычислите y = 4(x − 3)⁶ − 7(x − 3)³ + 2 при заданном x.</p>
+          <div class="lab-inputs">
+            <label>x <input type="number" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+      </div>
+    </main>
+    <script src="./L1.js"></script>
+  </body>
+</html>

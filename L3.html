@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Лабораторная работа №3</title>
+  </head>
+  <body class="page lab-page">
+    <aside class="aside"><h3>Меню навигации</h3><nav class="navbar" aria-label="Лабораторные работы">
+<a href="./index.html" class="linkLab">Назад</a>
+<a href="./L1.html" class="linkLab">ЛР №1 Линейные алгоритмы</a>
+<a href="./L2.html" class="linkLab">ЛР №2 Алгоритмы ветвления</a>
+<a href="./L3.html" class="linkLab" aria-current="page">ЛР №3 Циклические алгоритмы</a>
+<a href="./L4.html" class="linkLab">ЛР №4 Рекурсивные алгоритмы</a>
+<a href="./L5.html" class="linkLab">ЛР №5 Одномерные массивы</a>
+<a href="./L6.html" class="linkLab">ЛР №6 Двумерные массивы</a>
+<a href="./L7.html" class="linkLab">ЛР №7 Сортировка пузырьком</a>
+<a href="./L8.html" class="linkLab">ЛР №8 Сортировка вставками</a>
+<a href="./L9.html" class="linkLab">ЛР №9 Сортировка выбором</a>
+<a href="./L10.html" class="linkLab">ЛР №10 Бинарный поиск</a>
+<a href="./L11.html" class="linkLab">ЛР №11 Обход дерева</a>
+<a href="./L12.html" class="linkLab">ЛР №12 Очередь</a></nav></aside>
+    <main class="main">
+      <h1>Лабораторная работа №3</h1>
+      <div class="lab-tasks">
+        <form class="lab-task" data-task="1" aria-labelledby="task-1">
+          <h2 id="task-1">1. Стоимость конфет</h2>
+          <p>
+            По цене за 1 кг найдите стоимость конфет для 0,1 кг, 0,2 кг и так
+            далее до 1 кг.
+          </p>
+          <div class="lab-inputs">
+            <label
+              >Цена за кг <input type="number" min="0" step="any" required
+            /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="2" aria-labelledby="task-2">
+          <h2 id="task-2">2. Произведение сомножителей</h2>
+          <p>
+            Для целого N &gt; 0 найдите произведение 1,1 · 1,2 · 1,3 · … из N
+            сомножителей.
+          </p>
+          <div class="lab-inputs">
+            <label>N <input type="number" min="1" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="3" aria-labelledby="task-3">
+          <h2 id="task-3">3. Квадрат через сумму нечётных чисел</h2>
+          <p>
+            Найдите квадрат целого N &gt; 0 по формуле N² = 1 + 3 + 5 + … + (2 ·
+            N − 1). После каждого слагаемого выведите текущую сумму.
+          </p>
+          <div class="lab-inputs">
+            <label>N <input type="number" min="1" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="4" aria-labelledby="task-4">
+          <h2 id="task-4">4. Сумма степеней</h2>
+          <p>
+            Для вещественного A и целого N &gt; 0 найдите сумму 1 + A + A² + … +
+            Aⁿ за один цикл.
+          </p>
+          <div class="lab-inputs">
+            <label>A <input type="number" step="any" required /></label>
+            <label>N <input type="number" min="1" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="5" aria-labelledby="task-5">
+          <h2 id="task-5">5. Знакочередующаяся сумма</h2>
+          <p>
+            Для вещественного A и целого N &gt; 0 найдите сумму 1 − A + A² − A³
+            + … ± Aⁿ. Используйте один цикл без условного оператора для смены
+            знака.
+          </p>
+          <div class="lab-inputs">
+            <label>A <input type="number" step="any" required /></label>
+            <label>N <input type="number" min="1" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="6" aria-labelledby="task-6">
+          <h2 id="task-6">6. Повторение чисел</h2>
+          <p>
+            Выведите все целые числа от положительного A до B включительно, где
+            A &lt; B. Каждое число повторите столько раз, каково его значение.
+            Например, 3 выводится трижды.
+          </p>
+          <div class="lab-inputs">
+            <label>A <input type="number" min="1" step="1" required /></label>
+            <label>B <input type="number" min="1" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="7" aria-labelledby="task-7">
+          <h2 id="task-7">7. Незанятая часть отрезка</h2>
+          <p>
+            На отрезке длины A размещено максимальное число отрезков длины B без
+            наложений, где A &gt; B &gt; 0. Найдите незанятую длину без
+            умножения и деления.
+          </p>
+          <div class="lab-inputs">
+            <label>A <input type="number" min="0" step="any" required /></label>
+            <label>B <input type="number" min="0" step="any" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="8" aria-labelledby="task-8">
+          <h2 id="task-8">8. Наименьшее K</h2>
+          <p>
+            Для целого N &gt; 1 найдите наименьшее целое K, при котором сумма 1
+            + 2 + … + K достигнет N, и выведите эту сумму.
+          </p>
+          <div class="lab-inputs">
+            <label>N <input type="number" min="2" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="9" aria-labelledby="task-9">
+          <h2 id="task-9">9. Рост вклада</h2>
+          <p>
+            Вклад 1000 рублей ежемесячно увеличивается на P процентов от текущей
+            суммы, где 0 &lt; P &lt; 25. Найдите число месяцев K до превышения
+            1100 рублей и итоговую сумму S.
+          </p>
+          <div class="lab-inputs">
+            <label
+              >P, % <input type="number" min="0" max="25" step="any" required
+            /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+
+        <form class="lab-task" data-task="10" aria-labelledby="task-10">
+          <h2 id="task-10">10. Наибольший общий делитель</h2>
+          <p>
+            Найдите наибольший общий делитель положительных целых A и B по
+            алгоритму Евклида.
+          </p>
+          <div class="lab-inputs">
+            <label>A <input type="number" min="1" step="1" required /></label>
+            <label>B <input type="number" min="1" step="1" required /></label>
+          </div>
+          <button type="submit">Рассчитать</button>
+          <output></output>
+        </form>
+      </div>
+    </main>
+    <script src="./L3.js"></script>
+  </body>
+</html>
